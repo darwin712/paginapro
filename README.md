@@ -3,10 +3,5 @@
 Integrantes: David, Beni, Eitan, Alexa, Alexis
 
 ### Como ejecutar la pagina:
-Poner las siguientes instrucciones en la consola: 
-
-npm i -g http-server
-http-server
-
-Posteriormente tienes que darle a open in browser.
+abrir el siguiente link despues de haber guardado todos los cambios que hayas hecho: [https://darwin712.github.io/paginapro.github.io/]
 
