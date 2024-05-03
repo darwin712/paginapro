@@ -11,3 +11,6 @@ nav{
     font-family: Comic Sans MS;
     color: aliceblue;
 }
+table, th, td, tr{
+    border: 1px solid black;
+}
