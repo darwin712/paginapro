@@ -18,5 +18,8 @@ Link publico de la pagina: [https://darwin712.github.io/paginapro/]
 
 6- Modificar los archivos que quieras.
 
-7- Una vez ya hayas hecho tus cambios, realiza un commit y posteriormente dar en fetch origin.
+7- Una vez ya hayas hecho tus cambios, realiza un commit y posteriormente dar en Push Origin.
 
+8- Recargar los archivos, dandole a Fetch Origin
+
+9- Si alguien hizo un cambio aparte de ti, puedes recargar los archivos simplemente dandole a fetch origin y pull origin.
