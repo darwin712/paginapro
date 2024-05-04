@@ -14,3 +14,19 @@ nav{
 table, th, td, tr{
     border: 1px solid black;
 }
+
+.numbers{
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    color: #495057;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    width: 100%;
+    min-height: 10rem;
+    margin-top: 10px;
+    resize: vertical;
+}
