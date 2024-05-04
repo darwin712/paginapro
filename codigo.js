@@ -27,7 +27,7 @@ var moda = numeros.sort((a,b) => numeros.filter(v => v===a).length - numeros.fil
 
 var varianza = numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros.length;
 
-var desviacion_estandar = Math.sqrt[numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros.length];
+var desviacion_estandar = Math.sqrt(numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros.length);
 
 var parrafo1 = document.getElementById("media");
 
