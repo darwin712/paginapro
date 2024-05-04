@@ -1,5 +1,6 @@
+let input_text = [];
 
-let input_text = document.getElementById('textarea_numeros').value;
+input_text = document.getElementById('textarea_numeros').value;
 
 let numerosComoTexto = inputText.split(",");
 
