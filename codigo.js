@@ -29,8 +29,8 @@ function calcularModa() {
     var modas = [];
 
     // Calcular las frecuencias
-    for(var i = 0; i < numeros.length; i++) {
-        var num = numeros[i];
+    for(var e = 0; e < numeros.length; e++) {
+        var num = numeros[e];
         frecuencias[num] = (frecuencias[num] || 0) + 1;
         if(frecuencias[num] > maxFrecuencia) {
             maxFrecuencia = frecuencias[num];
