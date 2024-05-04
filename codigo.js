@@ -23,7 +23,7 @@ var media = numeros.reduce((a,b) => a + b, 0) / numeros.length;
 
 var mediana = (numeros[(numeros.length - 1) >> 1] + numeros[numeros.length >> 1]) / 2;
 
-var moda = numeros.sort((a,b) => numeros.filter(v => v===a).lenght - numeros.filter(v => v===b).lenght).pop();
+var moda = numeros.sort((a,b) => numeros.filter(v => v===a).length - numeros.filter(v => v===b).length).pop();
 
 var varianza = numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros.length;
 
