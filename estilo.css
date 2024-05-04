@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    background-image: url('background.jpg');
 }
 header{
     background-color: darkgray;
