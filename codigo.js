@@ -7,10 +7,10 @@ let numerosComoTexto = input.split(",");
 
 let numeros = numerosComoTexto.map(Number);
 
-var i = numeros.length;
+var e = numeros.length;
 
-for (var i = 0; i < len - 1; i++) {
-    for (var j = 0; j < len - 1 - i; j++) {
+for (var i = 0; i < e - 1; i++) {
+    for (var j = 0; j < e - 1 - i; j++) {
         if (numeros[j] > numeros[j + 1]) {
             var temp = numeros[j];
             numeros[j] = numeros[j + 1];
