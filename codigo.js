@@ -9,6 +9,6 @@ let numeros = numerosComoTexto.map(Number).join("<br>");;
 
 let parrafo = document.getElementById('miParrafo');
 
-parrafo.innerText = numerosComoTexto;
+parrafo.innerText = numeros;
 
 }
