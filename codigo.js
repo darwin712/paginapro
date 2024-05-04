@@ -1,6 +1,10 @@
 
 let input_text = document.getElementById('textarea_numeros').value;
 
-let nums = inputText.split(",");
+let numerosComoTexto = inputText.split(",");
 
-console.log(nums);
+let numeros = numerosComoTexto.map(Number);
+
+let parrafo = document.getElementById('miParrafo');
+
+parrafo.innerText = numeros.join(", ");
