@@ -12,4 +12,5 @@ let numeros = numerosComoTexto.map(Number);
 let parrafo = document.getElementById('miParrafo');
 
 parrafo.innerText = numeros.join(", ");
+
 }
