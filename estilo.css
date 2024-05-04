@@ -5,17 +5,15 @@ body{
     background-size: cover;
 }
 header{
-    background-color: darkgray;
+    background-color: rgb(105, 70, 246);
     font-family: Comic Sans MS;
     color: aliceblue;
+    text-shadow: rgb(235, 231, 219) 1px 0 10px;
 }
 nav{
     background-color: gray;
     font-family: Comic Sans MS;
     color: aliceblue;
-}
-table, th, td, tr{
-    border: 1px solid black;
 }
 
 .numbers{
@@ -56,4 +54,32 @@ table, th, td, tr{
 @media (min-width: 992px)
 .container {
     max-width: 960px;
+}
+
+#transparentBG{
+    background-color:#ced4da61;
+    border-radius: 15px;
+    width: 600px;
+    height: 640px;
+    margin-left: 30%;
+}
+
+h2{
+    color: white;
+    font-family: Comic Sans MS;
+    text-shadow: rgb(251, 229, 143) 1px 0 10px;
+}
+
+button{
+    background-color: rgb(214, 221, 254);
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 100px;
+    height: 50px;
+    margin-right: 5%;
+    box-shadow: rgb(235, 231, 219) 1px 0 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
 }
