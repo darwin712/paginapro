@@ -23,7 +23,7 @@ var media = numeros.reduce((a,b) => a + b, 0) / numeros.length;
 
 var mediana = (numeros[(numeros.length - 1) >> 1] + numeros[numeros.length >> 1]) / 2;
 
-function calcularModa(numeros) {
+function calcularModa() {
     var frecuencias = {};
     var maxFrecuencia = 0;
     var modas = [];
@@ -46,7 +46,7 @@ function calcularModa(numeros) {
 
     var parrafo3 = document.getElementById('moda');
 
-    parrafo3.innerText = modas;
+    parrafo3.innerText = "La moda del array es: " + modas.join(", ");
 }
 
 
