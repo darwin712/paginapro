@@ -1,6 +1,8 @@
 body{
     text-align: center;
     background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 header{
     background-color: darkgray;
