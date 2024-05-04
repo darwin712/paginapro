@@ -12,9 +12,9 @@ let parrafo = document.getElementById('miParrafo');
 parrafo.innerText = numeros.join(", ");
 */
 
-let input_text = document.getElementById('textarea_numeros').value;
+let input = document.getElementById('textarea_numeros').value;
 
-let numerosComoTexto = inputText.split(",");
+let numerosComoTexto = input.split(",");
 
 let parrafo = document.getElementById('miParrafo');
 
