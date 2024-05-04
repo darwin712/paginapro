@@ -23,6 +23,33 @@ var media = numeros.reduce((a,b) => a + b, 0) / numeros.length;
 
 var mediana = (numeros[(numeros.length - 1) >> 1] + numeros[numeros.length >> 1]) / 2;
 
+function calcularModa(numeros) {
+    var frecuencias = {};
+    var maxFrecuencia = 0;
+    var modas = [];
+
+    // Calcular las frecuencias
+    for(var i = 0; i < numeros.length; i++) {
+        var num = numeros[i];
+        frecuencias[num] = (frecuencias[num] || 0) + 1;
+        if(frecuencias[num] > maxFrecuencia) {
+            maxFrecuencia = frecuencias[num];
+        }
+    }
+
+    // Encontrar todas las modas
+    for(var num in frecuencias) {
+        if(frecuencias[num] === maxFrecuencia) {
+            modas.push(Number(num));
+        }
+    }
+
+    var parrafo3 = document.getElementById('moda');
+
+    parrafo3.innerText = modas;
+}
+
+
 var moda = numeros.sort((a,b) => numeros.filter(v => v===a).length - numeros.filter(v => v===b).length).pop();
 
 var varianza = numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros.length;
@@ -36,10 +63,6 @@ parrafo1.innerText = media;
 var parrafo2 = document.getElementById('mediana');
 
 parrafo2.innerText = mediana;
-
-var parrafo3 = document.getElementById('moda');
-
-parrafo3.innerText = moda;
 
 var parrafo4 = document.getElementById('varianza');
 
