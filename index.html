@@ -14,7 +14,8 @@
     <header> <h1> Calculadora de Medidas de Tendencia Central </h1> </header>
 
 <div id="transparentBG">
-  <h2> Ingresar sucesión de numeros </h2>
+  <h1> Ingresar sucesión de numeros </h1>
+  <h2 id="result"> Resultado </h2>
 
     <div class="container article" style="height: auto !important;">
     <div class="article__box" style="height: auto !important;">
@@ -24,14 +25,12 @@
   </div>
     </div> <br>
 
-    <button> Media </button><p id="media"></p>
-    <button> Mediana </button><p id="mediana"></p>
-    <button> Moda </button><p id="moda"></p>
+    <button onclick="calcular('Media')"> Media </button>
+    <button onclick="calcular('Mediana')"> Mediana </button>
+    <button> no </button>
 
-    <input type = "button" onclick="prueba()" value="prueba">
-
-    <button> Varianza </button><p id="varianza"></p>
-    <button> Desviacion Estandar </button><p id="DVE"></p>
+    <button onclick="calcular('Varianza')"> Varianza </button>
+    <button onclick="calcular('DVE')"> Desviacion </button>
 
   </div>
   </body>

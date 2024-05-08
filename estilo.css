@@ -17,6 +17,7 @@ nav{
 }
 
 .numbers{
+    font-family: Comic Sans MS;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -59,16 +60,27 @@ nav{
 #transparentBG{
     background-color:#ced4da61;
     border-radius: 15px;
-    width: 600px;
+    width: 725px;
     height: 900px;
-    margin-left: 30%;
+    margin-left: 28%;
 }
 
-h2{
+h1{
     color: white;
     font-family: Comic Sans MS;
     text-shadow: rgb(251, 229, 143) 1px 0 10px;
 }
+
+#result{
+    color: white;
+    font-family: Comic Sans MS;
+    text-shadow: rgb(221, 216, 199) 1px 0 10px;
+    background-color:#e4e6e971;
+    border-radius: 9px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
 
 button{
     background-color: rgb(214, 221, 254);
@@ -79,6 +91,7 @@ button{
     width: 100px;
     height: 50px;
     margin-right: 5%;
+    margin-left: 0.1%;
     box-shadow: rgb(235, 231, 219) 1px 0 10px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 25px;

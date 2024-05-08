@@ -1,5 +1,5 @@
 
-function prueba(){
+function calcular(dato){
 
 var input = document.getElementById('textarea_numeros').value;
 
@@ -56,20 +56,24 @@ var varianza = numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros
 
 var desviacion_estandar = Math.sqrt(numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros.length);
 
-var parrafo1 = document.getElementById("media");
+if(dato == "Media"){
+var resultMedia = document.getElementById("result");
+resultMedia.innerText = "Media = "+media;
+}
 
-parrafo1.innerText = media;
+if(dato == "Mediana"){
+    var resultMediana = document.getElementById("result");
+    resultMediana.innerText = "Mediana = "+mediana;
+}
 
-var parrafo2 = document.getElementById('mediana');
+if(dato == "Varianza"){
+    var resultVarianza = document.getElementById("result");
+    resultVarianza.innerText = "Varianza = "+varianza;
+}
 
-parrafo2.innerText = mediana;
-
-var parrafo4 = document.getElementById('varianza');
-
-parrafo4.innerText = varianza;
-
-var parrafo5 = document.getElementById('DVE');
-
-parrafo5.innerText = desviacion_estandar;
+if(dato == "DVE"){
+    var resultDVE = document.getElementById("result");
+    resultDVE.innerText = "DVE = "+desviacion_estandar;
+}
 
 }
