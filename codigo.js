@@ -52,15 +52,18 @@ if(dato == "DVE"){
 let textarea = document.getElementById('textarea_numeros');
 let mensaje = document.getElementById('mensaje');
 
-textarea.addEventListener('input', function() {
+textarea.addEventListener('input', function(e) {
 
-  if (!/^[\d,]*$/.test(this.value)) {
- 
-    mensaje.style.display = 'block';
-    this.disabled = true;
-  } else {
+    var patron = /^[0-9,]*$/;
+  
     
-    mensaje.style.display = 'none';
-    this.disabled = false;
-  }
-});
+    if (!patron.test(textarea.value)) {
+     
+      mensaje.textContent = 'Por favor, ingresa solo números y comas.';
+      textarea.disabled = true;
+    } else {
+      // Si el valor es correcto, oculta el mensaje y desbloquea el textarea
+      mensaje.textContent = '';
+      textarea.disabled = false;
+    }
+  });
