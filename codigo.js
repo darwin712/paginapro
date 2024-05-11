@@ -56,10 +56,10 @@ textarea.addEventListener('input', function() {
     let valor = textarea.value.trim();
     if (/^[0-9,]+$/.test(valor)) {
         
-        mensajeError.style.display = 'none';
+        mensaje.style.display = 'none';
     } else {
        
-        mensajeError.style.display = 'block';
+        mensaje.style.display = 'block';
         textarea.value = valor.slice(0, -1); 
     }
 });
