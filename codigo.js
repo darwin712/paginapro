@@ -49,11 +49,11 @@ if(dato == "DVE"){
 
 }
 
-let textarea = document.getElementById('textarea_numeros');
-let mensaje = document.getElementById('mensaje');
+const textarea = document.getElementById('textarea_numeros');
+const mensaje = document.getElementById('mensaje');
 
 textarea.addEventListener('input', function() {
-    let valor = textarea.value.trim();
+    const valor = textarea.value.trim();
     if (/^[0-9,]+$/.test(valor)) {
         mensaje.style.display = 'none';
     } else {
