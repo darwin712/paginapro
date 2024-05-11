@@ -55,7 +55,6 @@ let mensaje = document.getElementById('mensaje');
 textarea.addEventListener('input', function() {
     let valor = textarea.value.trim();
     if (/^[0-9,]+$/.test(valor)) {
-        
         mensaje.style.display = 'none';
     } else {
        
