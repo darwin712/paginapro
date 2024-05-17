@@ -83,7 +83,7 @@ function calculateMultimode() {
     }
     
     // Mostrar el resultado
-    document.getElementById('result').innerText = `La(s) moda(s): ${modes.join(', ')}`;
+    document.getElementById('result').innerText = ${modes.join(', ')};
 }
 
 
