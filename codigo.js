@@ -27,6 +27,27 @@ var varianza = numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros
 
 var desviacion_estandar = Math.sqrt(numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros.length);
 
+const calcularMultimoda = (lista) => {
+    const contador = {};
+    let maxRepeticiones = 0;
+    let multimodales = [];
+  
+    for (const elemento of lista) {
+      contador[elemento] = (contador[elemento] || 0) + 1;
+      maxRepeticiones = Math.max(maxRepeticiones, contador[elemento]);
+    }
+  
+    for (const elemento in contador) {
+      if (contador[elemento] === maxRepeticiones) {
+        multimodales.push(elemento);
+      }
+    }
+  
+    return multimodales;
+  };
+  
+  const valoresMultimodales = calcularMultimoda(numeros);
+
 if(dato == "Media"){
 var resultMedia = document.getElementById("result");
 resultMedia.innerText = "Media = "+media;
@@ -46,6 +67,11 @@ if(dato == "DVE"){
     var resultDVE = document.getElementById("result");
     resultDVE.innerText = "DVE = "+desviacion_estandar;
 }
+
+if(dato == "Moda"){
+    var resulmoda = document.getElementById("result");
+    resultModa.innerText = "Moda = "+ valoresMultimodales;
+ }
 
 }
 
