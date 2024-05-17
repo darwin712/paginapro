@@ -49,6 +49,27 @@ if(dato == "DVE"){
 
 }
 
+function calculateMode(numbers) {
+    const frequencyMap = new Map();
+    for (const number of numbers) {
+        frequencyMap.set(number, (frequencyMap.get(number) || 0) + 1);
+    }
+    const maxFrequency = Math.max(...frequencyMap.values());
+    const modes = [];
+    for (const [key, value] of frequencyMap.entries()) {
+        if (value === maxFrequency) {
+            modes.push(key);
+        }
+    }
+    return modes;
+
+    var resultModes = document.getElementById("result");
+    resultModes.innerText = "Modas = "+ modes;
+
+
+}
+
+
 
 const textarea = document.getElementById('textarea_numeros');
 const mensaje = document.getElementById('mensaje');
