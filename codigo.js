@@ -27,27 +27,6 @@ var varianza = numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros
 
 var desviacion_estandar = Math.sqrt(numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros.length);
 
-function calcularMultimoda = (lista) => {
-    const contador = {};
-    let maxRepeticiones = 0;
-    let multimodales = [];
-  
-    for (const elemento of lista) {
-      contador[elemento] = (contador[elemento] || 0) + 1;
-      maxRepeticiones = Math.max(maxRepeticiones, contador[elemento]);
-    }
-  
-    for (const elemento in contador) {
-      if (contador[elemento] === maxRepeticiones) {
-        multimodales.push(elemento);
-      }
-    }
-  
-    return multimodales;
-  };
-  
-  var valoresMultimodales = calcularMultimoda(numeros);
-
 if(dato == "Media"){
 var resultMedia = document.getElementById("result");
 resultMedia.innerText = "Media = "+media;
@@ -68,12 +47,45 @@ if(dato == "DVE"){
     resultDVE.innerText = "DVE = "+desviacion_estandar;
 }
 
-if(dato == "Moda"){
-    var resultmoda = document.getElementById("result");
-    resultModa.innerText = "Moda = "+ valoresMultimodales;
 }
 
+function calculateMultimode() {
+    // Obtener la entrada del usuario
+    const input = document.getElementById('numbers').value;
+    
+    // Convertir la entrada en un array de números
+    const numberArray = input.split(',').map(Number);
+    
+    // Contar las ocurrencias de cada número
+    const frequencyMap = {};
+    numberArray.forEach(number => {
+        if (frequencyMap[number]) {
+            frequencyMap[number]++;
+        } else {
+            frequencyMap[number] = 1;
+        }
+    });
+    
+    // Determinar la frecuencia máxima
+    let maxFrequency = 0;
+    for (const key in frequencyMap) {
+        if (frequencyMap[key] > maxFrequency) {
+            maxFrequency = frequencyMap[key];
+        }
+    }
+    
+    // Encontrar todos los números con la frecuencia máxima
+    const modes = [];
+    for (const key in frequencyMap) {
+        if (frequencyMap[key] === maxFrequency) {
+            modes.push(Number(key));
+        }
+    }
+    
+    // Mostrar el resultado
+    document.getElementById('result').innerText = `La(s) moda(s): ${modes.join(', ')}`;
 }
+
 
 const textarea = document.getElementById('textarea_numeros');
 const mensaje = document.getElementById('mensaje');
