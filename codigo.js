@@ -49,43 +49,6 @@ if(dato == "DVE"){
 
 }
 
-function calculateMultimode() {
-    // Obtener la entrada del usuario
-    const input = document.getElementById('numbers').value;
-    
-    // Convertir la entrada en un array de números
-    const numberArray = input.split(',').map(Number);
-    
-    // Contar las ocurrencias de cada número
-    const frequencyMap = {};
-    numberArray.forEach(number => {
-        if (frequencyMap[number]) {
-            frequencyMap[number]++;
-        } else {
-            frequencyMap[number] = 1;
-        }
-    });
-    
-    // Determinar la frecuencia máxima
-    let maxFrequency = 0;
-    for (const key in frequencyMap) {
-        if (frequencyMap[key] > maxFrequency) {
-            maxFrequency = frequencyMap[key];
-        }
-    }
-    
-    // Encontrar todos los números con la frecuencia máxima
-    const modes = [];
-    for (const key in frequencyMap) {
-        if (frequencyMap[key] === maxFrequency) {
-            modes.push(Number(key));
-        }
-    }
-    
-    // Mostrar el resultado
-    document.getElementById('result').innerText = ${modes.join(', ')};
-}
-
 
 const textarea = document.getElementById('textarea_numeros');
 const mensaje = document.getElementById('mensaje');
