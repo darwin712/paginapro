@@ -69,9 +69,9 @@ if(dato == "DVE"){
 }
 
 if(dato == "Moda"){
-    var resulmoda = document.getElementById("result");
+    var resultmoda = document.getElementById("result");
     resultModa.innerText = "Moda = "+ valoresMultimodales;
- }
+}
 
 }
 
