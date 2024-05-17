@@ -49,27 +49,43 @@ if(dato == "DVE"){
 
 }
 
-function calculateMode(numbers) {
-    const frequencyMap = new Map();
-    for (const number of numbers) {
-        frequencyMap.set(number, (frequencyMap.get(number) || 0) + 1);
-    }
-    const maxFrequency = Math.max(...frequencyMap.values());
-    const modes = [];
-    for (const [key, value] of frequencyMap.entries()) {
-        if (value === maxFrequency) {
-            modes.push(key);
+function calcularModa(numeros) {
+
+    var input = document.getElementById('textarea_numeros').value;
+
+    var numerosComoTexto = input.split(",");
+
+    var numeros = numerosComoTexto.map(Number);
+
+     var e = numeros.length;
+
+for (var i = 0; i < e - 1; i++) {
+    for (var j = 0; j < e - 1 - i; j++) {
+        if (numeros[j] > numeros[j + 1]) {
+            var temp = numeros[j];
+            numeros[j] = numeros[j + 1];
+            numeros[j + 1] = temp;
         }
     }
-    return modes;
-
-    var resultModes = document.getElementById("result");
-    resultModes.innerText = "Modas = "+ modes;
-
-
 }
 
+    const mapaFrecuencia = {};
+    let frecuenciaMaxima = 0;
+    const modas = [];
 
+    numeros.forEach( numero => {
+        mapaFrecuencia[numero] = (mapaFrecuencia[numero] || 0) + 1;
+        frecuenciaMaxima = Math.max(frecuenciaMaxima, mapaFrecuencia[numero]);
+    });
+
+    for (const numero in mapaFrecuencia) {
+        if (mapaFrecuencia[numero] === frecuenciaMaxima) {
+            modas.push(Number(numero));
+        }
+    }
+
+    document.getElementById('result').innerText = 'Modas: ' + modas.join(', ');
+}
 
 const textarea = document.getElementById('textarea_numeros');
 const mensaje = document.getElementById('mensaje');
