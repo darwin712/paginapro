@@ -27,7 +27,7 @@ var varianza = numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros
 
 var desviacion_estandar = Math.sqrt(numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros.length);
 
-const calcularMultimoda = (lista) => {
+var calcularMultimoda = (lista) => {
     const contador = {};
     let maxRepeticiones = 0;
     let multimodales = [];
@@ -46,7 +46,7 @@ const calcularMultimoda = (lista) => {
     return multimodales;
   };
   
-  const valoresMultimodales = calcularMultimoda(numeros);
+  var valoresMultimodales = calcularMultimoda(numeros);
 
 if(dato == "Media"){
 var resultMedia = document.getElementById("result");
