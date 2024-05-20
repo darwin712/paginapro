@@ -143,6 +143,9 @@ document.addEventListener("DOMContentLoaded", () => {
             submitButton3.disabled = false;
             submitButton4.disabled = false;
             submitButton5.disabled = false;
+
+            var result = document.getElementById("result");
+            result.innerText = "Resultado";
             
         }
 
