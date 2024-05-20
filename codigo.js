@@ -108,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showMessageIfEmpty(event) {
         if (textarea.value.trim() === "") {
+            const message = document.getElementById("mensaje");
             message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
             event.preventDefault(); 
             return true; 
