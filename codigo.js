@@ -5,7 +5,7 @@ var input = document.getElementById('textarea_numeros').value;
 
 if(input === ""){
      var result = document.getElementById("result");
-     result = "Resultado";
+     result.inneErText  = "Resultado";
 }else{
 
 var numerosComoTexto = input.split(",");
