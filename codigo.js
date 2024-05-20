@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitButton1.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
             message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
-            event.preventDefault;
+            event.preventDefault();
             return;
         }
     });
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitButton2.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
             message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la mediana.";
-            event.preventDefault;
+            event.preventDefault();
             return;
         }
     });
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitButton3.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
             message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la moda.";
-            event.preventDefault;
+            event.preventDefault();
             return;
         }
     });
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitButton4.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
             message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la varianza.";
-            event.preventDefault;
+            event.preventDefault();
             return;
         }
     });
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitButton5.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
             message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la desviacion estandar.";
-            event.preventDefault;
+            event.preventDefault();
             return;
         }
     });
