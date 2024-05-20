@@ -112,36 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const value = textarea.value.trim();
 
-        if (value === "") {
-    
-            submitButton1.addEventListener("click", function(event) {
-                    event.preventDefault(); 
-                    message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
-                
-            });
-        
-            submitButton2.addEventListener("click", (event) {
-                     event.preventDefault(); 
-                    message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
-            });
-        
-            submitButton3.addEventListener("click", function(event) {
-                     event.preventDefault(); 
-                    message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
-            });
-        
-            submitButton4.addEventListener("click", function(event) {
-                    event.preventDefault(); 
-                    message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
-            });
-        
-            submitButton5.addEventListener("click", function(event) {
-                    event.preventDefault(); 
-                    message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
-            });
-        
-            }else{
-
         const invalidChars = /[^0-9,.]/;
 
         if (invalidChars.test(value)) {
@@ -168,6 +138,5 @@ document.addEventListener("DOMContentLoaded", () => {
             submitButton5.disabled = false;
             
         }
-    }
     });
 });
