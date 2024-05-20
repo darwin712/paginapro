@@ -116,28 +116,33 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     submitButton1.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) return; // Mostrar mensaje y salir si el campo está vacío
-        // Lógica para calcular la media
+        if (showMessageIfEmpty(event)) {
+            return;
+        } 
     });
 
     submitButton2.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) return; // Mostrar mensaje y salir si el campo está vacío
-        // Lógica para calcular la mediana
+        if (showMessageIfEmpty(event)) {
+            return;
+        } 
     });
 
     submitButton3.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) return; // Mostrar mensaje y salir si el campo está vacío
-        // Lógica para calcular la moda
+        if (showMessageIfEmpty(event)) {
+            return;
+        } 
     });
 
     submitButton4.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) return; // Mostrar mensaje y salir si el campo está vacío
-        // Lógica para calcular la varianza
+        if (showMessageIfEmpty(event)) {
+            return;
+        } 
     });
 
     submitButton5.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) return; // Mostrar mensaje y salir si el campo está vacío
-        // Lógica para calcular la desviación estándar
+        if (showMessageIfEmpty(event)) {
+            return;
+        } 
     });
 
 
