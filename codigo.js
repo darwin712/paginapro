@@ -4,7 +4,8 @@ function calcular(dato){
 var input = document.getElementById('textarea_numeros').value;
 
 if(input === ""){
-    
+     var result = document.getElementById("result");
+     result = "Resultado";
 }else{
 
 var numerosComoTexto = input.split(",");
@@ -12,8 +13,6 @@ var numerosComoTexto = input.split(",");
 var numeros = numerosComoTexto.map(Number);
 
 var e = numeros.length;
-
-const message = document.getElementById("mensaje");
 
 for (var i = 0; i < e - 1; i++) {
     for (var j = 0; j < e - 1 - i; j++) {
