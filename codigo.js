@@ -106,6 +106,36 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton4 = document.getElementById("Varianza");
     const submitButton5 = document.getElementById("Desviacion");
 
+    if (textarea.value.trim() === "") {
+    
+        submitButton1.addEventListener("click", function(event) {
+                event.preventDefault(); 
+                message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
+            
+        });
+    
+        submitButton2.addEventListener("click", (event) {
+                 event.preventDefault(); 
+                message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
+        });
+    
+        submitButton3.addEventListener("click", function(event) {
+                 event.preventDefault(); 
+                message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
+        });
+    
+        submitButton4.addEventListener("click", function(event) {
+                event.preventDefault(); 
+                message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
+        });
+    
+        submitButton5.addEventListener("click", function(event) {
+                event.preventDefault(); 
+                message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
+        });
+    
+        }
+
 
     textarea.addEventListener("input", () => {
 
