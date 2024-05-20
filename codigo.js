@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton2 = document.getElementById("Mediana");
     const submitButton3 = document.getElementById("Moda");
     const submitButton4 = document.getElementById("Varianza");
-    const submitButton5 = document.getElementById("DVE");
+    const submitButton5 = document.getElementById("Desviacion");
 
 
     textarea.addEventListener("input", () => {
