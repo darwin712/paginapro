@@ -116,35 +116,40 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     submitButton1.addEventListener("click", function(event) {
-        if (showMessageIfEmpty() === "true") {
+        var botonvoid = showMessageIfEmpty()
+        if (botonvoid === "true") {
             event.preventDefault(); 
             return;
         } 
     });
 
     submitButton2.addEventListener("click", (event) {
-        if (showMessageIfEmpty() === "true") {
+        var botonvoid = showMessageIfEmpty()
+        if (botonvoid === "true") {
             event.preventDefault(); 
             return;
         } 
     });
 
     submitButton3.addEventListener("click", function(event) {
-        if (showMessageIfEmpty() === "true") {
+        var botonvoid = showMessageIfEmpty()
+        if (botonvoid === "true") {
             event.preventDefault(); 
             return;
         } 
     });
 
     submitButton4.addEventListener("click", function(event) {
-        if (showMessageIfEmpty() === "true") {
+        var botonvoid = showMessageIfEmpty()
+        if (botonvoid === "true") {
             event.preventDefault(); 
             return;
         } 
     });
 
     submitButton5.addEventListener("click", function(event) {
-        if (showMessageIfEmpty() === "true") {
+        var botonvoid = showMessageIfEmpty()
+        if (botonvoid === "true") {
             event.preventDefault(); 
             return;
         } 
