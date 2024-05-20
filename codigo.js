@@ -122,6 +122,9 @@ document.addEventListener("DOMContentLoaded", () => {
             submitButton3.disabled = true;
             submitButton4.disabled = true;
             submitButton5.disabled = true;
+
+            var result = document.getElementById("result");
+            result.innerText = "Resultado";
            
         } else {
           
