@@ -27,6 +27,8 @@ var varianza = numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros
 
 var desviacion_estandar = Math.sqrt(numeros.reduce((a, b) => a + Math.pow(b - media, 2), 0) / numeros.length);
 
+var moda = calcularModa(numeros);
+
 if(dato == "Media"){
 var resultMedia = document.getElementById("result");
 resultMedia.innerText = "Media = "+media;
@@ -45,6 +47,11 @@ if(dato == "Varianza"){
 if(dato == "DVE"){
     var resultDVE = document.getElementById("result");
     resultDVE.innerText = "DVE = "+desviacion_estandar;
+}
+
+if(dato == "Moda"){
+    var resultModa = document.getElementById("result");
+    resultModa.inneErText = "Moda = "+ moda;
 }
 
 }
@@ -85,6 +92,9 @@ for (var i = 0; i < e - 1; i++) {
     }
 
     document.getElementById('result').innerText = 'Modas: ' + modas.join(', ');
+
+    
+    return modas;
 }
 
 const textarea = document.getElementById('textarea_numeros');
