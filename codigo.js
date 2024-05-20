@@ -106,6 +106,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton4 = document.getElementById("Varianza");
     const submitButton5 = document.getElementById("Desviacion");
 
+    function showMessageIfEmpty(event) {
+        if (textarea.value.trim() === "") {
+            const message = document.getElementById("mensaje");
+            message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
+            event.preventDefault(); 
+            return true; 
+        }
+        return false;
+    }
+
+    submitButton1.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; 
+      
+    });
+
+    submitButton2.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; 
+       
+    });
+
+    submitButton3.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; 
+        
+    });
+
+    submitButton4.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; 
+        
+    });
+
+    submitButton5.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; 
+       
+    });
+
 
     textarea.addEventListener("input", () => {
 
@@ -113,11 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const invalidChars = /[^0-9,.]/;
 
-        if (value.trim() != "") {
-
             message.textContent = "";
 
-            const invalidChars = /[^0-9,.]/;
             if (invalidChars.test(value)) {
                 
                 message.textContent = "Caracteres no permitidos detectados. Solo se permiten números, comas y puntos.";
@@ -135,5 +167,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 submitButton4.disabled = false;
                 submitButton5.disabled = false;
             }
-    });
+  
 });
