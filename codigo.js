@@ -106,66 +106,38 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton4 = document.getElementById("Varianza");
     const submitButton5 = document.getElementById("Desviacion");
 
-    function showMessageIfEmpty(event) {
-        if (textarea.value.trim() === "") {
-            const message = document.getElementById("mensaje");
-            message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
-            event.preventDefault(); 
-            return true; 
-        }
-        return false;
-    }
-
-    submitButton1.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) return; 
-      
-    });
-
-    submitButton2.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) return; 
-       
-    });
-
-    submitButton3.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) return; 
-        
-    });
-
-    submitButton4.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) return; 
-        
-    });
-
-    submitButton5.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) return; 
-       
-    });
+    
 
 
     textarea.addEventListener("input", () => {
 
-        const value = textarea.value;
+        const value = textarea.value.trim();
 
         const invalidChars = /[^0-9,.]/;
 
+        if (invalidChars.test(value)) {
+           
+            message.textContent = "Caracteres no permitidos detectados. Solo se permiten números, comas y puntos.";
+
+            submitButton1.disabled = true;
+            submitButton2.disabled = true;
+            submitButton3.disabled = true;
+            submitButton4.disabled = true;
+            submitButton5.disabled = true;
+
+            var result = document.getElementById("result");
+            result.innerText = "Resultado";
+           
+        } else {
+          
             message.textContent = "";
 
-            if (invalidChars.test(value)) {
-                
-                message.textContent = "Caracteres no permitidos detectados. Solo se permiten números, comas y puntos.";
-                submitButton1.disabled = true;
-                submitButton2.disabled = true;
-                submitButton3.disabled = true;
-                submitButton4.disabled = true;
-                submitButton5.disabled = true;
-            } else {
-                
-                message.textContent = "";
-                submitButton1.disabled = false;
-                submitButton2.disabled = false;
-                submitButton3.disabled = false;
-                submitButton4.disabled = false;
-                submitButton5.disabled = false;
-            }
-  
+            submitButton1.disabled = false;
+            submitButton2.disabled = false;
+            submitButton3.disabled = false;
+            submitButton4.disabled = false;
+            submitButton5.disabled = false;
+            
+        }
+    });
 });
