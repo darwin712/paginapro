@@ -106,55 +106,36 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton4 = document.getElementById("Varianza");
     const submitButton5 = document.getElementById("Desviacion");
 
-    function showMessageIfEmpty() {
-        if (textarea.value.trim() === "") {
-            message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
-            return true; // Indicar que el campo está vacío
-        }else{
-            return false; // Indicar que el campo no está vacío
-        }
-    }
-
+    
+    if (textarea.value.trim() === "") {
+    
     submitButton1.addEventListener("click", function(event) {
-        var botonvoid = showMessageIfEmpty()
-        if (botonvoid === "true") {
             event.preventDefault(); 
-            showMessageIfEmpty()
-        } 
+            message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
+        
     });
 
     submitButton2.addEventListener("click", (event) {
-        var botonvoid = showMessageIfEmpty()
-        if (botonvoid === "true") {
-            event.preventDefault(); 
-            showMessageIfEmpty()
-        } 
+             event.preventDefault(); 
+            message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
     });
 
     submitButton3.addEventListener("click", function(event) {
-        var botonvoid = showMessageIfEmpty()
-        if (botonvoid === "true") {
-            event.preventDefault(); 
-            showMessageIfEmpty()
-        } 
+             event.preventDefault(); 
+            message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
     });
 
     submitButton4.addEventListener("click", function(event) {
-        var botonvoid = showMessageIfEmpty()
-        if (botonvoid === "true") {
             event.preventDefault(); 
-            showMessageIfEmpty()
-        } 
+            message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
     });
 
     submitButton5.addEventListener("click", function(event) {
-        var botonvoid = showMessageIfEmpty()
-        if (botonvoid === "true") {
             event.preventDefault(); 
-            showMessageIfEmpty()
-        } 
+            message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
     });
 
+    }
 
     textarea.addEventListener("input", () => {
 
