@@ -100,6 +100,12 @@ for (var i = 0; i < e - 1; i++) {
 document.addEventListener("DOMContentLoaded", () => {
     const textarea = document.getElementById("textarea_numeros");
     const message = document.getElementById("mensaje");
+    const submitButton1 = document.getElementById("Media");
+    const submitButton2 = document.getElementById("Mediana");
+    const submitButton3 = document.getElementById("Moda");
+    const submitButton4 = document.getElementById("Varianza");
+    const submitButton5 = document.getElementById("DVE");
+
 
     textarea.addEventListener("input", () => {
 
@@ -110,11 +116,23 @@ document.addEventListener("DOMContentLoaded", () => {
         if (invalidChars.test(value)) {
            
             message.textContent = "Caracteres no permitidos detectados. Solo se permiten números, comas y puntos.";
-            textarea.disabled = true;
+
+            submitButton1.disabled = true;
+            submitButton2.disabled = true;
+            submitButton3.disabled = true;
+            submitButton4.disabled = true;
+            submitButton5.disabled = true;
+           
         } else {
           
             message.textContent = "";
-            textarea.disabled = false;
+
+            submitButton1.disabled = false;
+            submitButton2.disabled = false;
+            submitButton3.disabled = false;
+            submitButton4.disabled = false;
+            submitButton5.disabled = false;
+            
         }
     });
 });
