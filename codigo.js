@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var botonvoid = showMessageIfEmpty()
         if (botonvoid === "true") {
             event.preventDefault(); 
-            return;
+            showMessageIfEmpty()
         } 
     });
 
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var botonvoid = showMessageIfEmpty()
         if (botonvoid === "true") {
             event.preventDefault(); 
-            return;
+            showMessageIfEmpty()
         } 
     });
 
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var botonvoid = showMessageIfEmpty()
         if (botonvoid === "true") {
             event.preventDefault(); 
-            return;
+            showMessageIfEmpty()
         } 
     });
 
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var botonvoid = showMessageIfEmpty()
         if (botonvoid === "true") {
             event.preventDefault(); 
-            return;
+            showMessageIfEmpty()
         } 
     });
 
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
         var botonvoid = showMessageIfEmpty()
         if (botonvoid === "true") {
             event.preventDefault(); 
-            return;
+            showMessageIfEmpty()
         } 
     });
 
