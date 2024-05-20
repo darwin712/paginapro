@@ -139,44 +139,45 @@ document.addEventListener("DOMContentLoaded", () => {
             
         }
 
-        submitButton1.addEventListener("click", (event) => {
-            if (textarea.value.trim() === "") {
-                message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
-                event.preventDefault;
-                return;
-            }
-        });
+    });
 
-        submitButton1.addEventListener("click", (event) => {
-            if (textarea.value.trim() === "") {
-                message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
-                event.preventDefault;
-                return;
-            }
-        });
+    submitButton1.addEventListener("click", (event) => {
+        if (textarea.value.trim() === "") {
+            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
+            event.preventDefault;
+            return;
+        }
+    });
 
-        submitButton1.addEventListener("click", (event) => {
-            if (textarea.value.trim() === "") {
-                message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
-                event.preventDefault;
-                return;
-            }
-        });
+    submitButton1.addEventListener("click", (event) => {
+        if (textarea.value.trim() === "") {
+            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
+            event.preventDefault;
+            return;
+        }
+    });
 
-        submitButton1.addEventListener("click", (event) => {
-            if (textarea.value.trim() === "") {
-                message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
-                event.preventDefault;
-                return;
-            }
-        });
+    submitButton1.addEventListener("click", (event) => {
+        if (textarea.value.trim() === "") {
+            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
+            event.preventDefault;
+            return;
+        }
+    });
 
-        submitButton1.addEventListener("click", (event) => {
-            if (textarea.value.trim() === "") {
-                message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
-                event.preventDefault;
-                return;
-            }
-        });
+    submitButton1.addEventListener("click", (event) => {
+        if (textarea.value.trim() === "") {
+            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
+            event.preventDefault;
+            return;
+        }
+    });
+
+    submitButton1.addEventListener("click", (event) => {
+        if (textarea.value.trim() === "") {
+            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
+            event.preventDefault;
+            return;
+        }
     });
 });
