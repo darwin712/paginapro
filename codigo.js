@@ -97,16 +97,24 @@ for (var i = 0; i < e - 1; i++) {
     return modas;
 }
 
-const textarea = document.getElementById('textarea_numeros');
-const mensaje = document.getElementById('mensaje');
+document.addEventListener("DOMContentLoaded", () => {
+    const textarea = document.getElementById("textarea_numeros");
+    const message = document.getElementById("mensaje");
 
-textarea.addEventListener('input', function() {
-    const valor = textarea.value.trim();
-    if (/^[0-9,]+$/.test(valor)) {
-        mensaje.style.display = 'none';
-    } else {
-       
-        mensaje.style.display = 'block';
-        textarea.value = valor.slice(0, -1); 
-    }
+    textarea.addEventListener("input", () => {
+
+        const value = textarea.value;
+
+        const invalidChars = /[^0-9,.]/;
+
+        if (invalidChars.test(value)) {
+           
+            message.textContent = "Caracteres no permitidos detectados. Solo se permiten números, comas y puntos.";
+            textarea.disabled = true;
+        } else {
+          
+            message.textContent = "";
+            textarea.disabled = false;
+        }
+    });
 });
