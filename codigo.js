@@ -114,8 +114,33 @@ document.addEventListener("DOMContentLoaded", () => {
         const invalidChars = /[^0-9,.]/;
 
         if (value.trim() === "") {
-           
-            message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
+
+            submitButton1.addEventListener("click", () => {
+               
+                message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
+                
+            });
+            submitButton2.addEventListener("click", () => {
+                
+                message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
+              
+            });
+            submitButton3.addEventListener("click", () => {
+               
+                message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
+                
+            });
+            submitButton4.addEventListener("click", () => {
+                
+                message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
+                
+            });
+            submitButton5.addEventListener("click", () => {
+                
+                message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
+                
+            });
+
             submitButton1.disabled = true;
             submitButton2.disabled = true;
             submitButton3.disabled = true;
