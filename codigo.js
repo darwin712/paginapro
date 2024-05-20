@@ -106,6 +106,40 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton4 = document.getElementById("Varianza");
     const submitButton5 = document.getElementById("Desviacion");
 
+    function showMessageIfEmpty(event) {
+        if (textarea.value.trim() === "") {
+            message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
+            event.preventDefault(); 
+            return true; 
+        }
+        return false;
+    }
+
+    submitButton1.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; 
+      
+    });
+
+    submitButton2.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; 
+       
+    });
+
+    submitButton3.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; 
+        
+    });
+
+    submitButton4.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; 
+        
+    });
+
+    submitButton5.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; 
+       
+    });
+
 
     textarea.addEventListener("input", () => {
 
@@ -113,47 +147,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const invalidChars = /[^0-9,.]/;
 
-        if (value.trim() === "") {
+        if (value.trim() != "") {
 
-            submitButton1.addEventListener("click", () => {
-               
-                message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
-                
-            });
-            submitButton2.addEventListener("click", () => {
-                
-                message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
-              
-            });
-            submitButton3.addEventListener("click", () => {
-               
-                message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
-                
-            });
-            submitButton4.addEventListener("click", () => {
-                
-                message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
-                
-            });
-            submitButton5.addEventListener("click", () => {
-                
-                message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
-                
-            });
-
-            submitButton1.disabled = true;
-            submitButton2.disabled = true;
-            submitButton3.disabled = true;
-            submitButton4.disabled = true;
-            submitButton5.disabled = true;
-        } else {
-           
             message.textContent = "";
-            submitButton1.disabled = false;
-            submitButton2.disabled = false;
-            submitButton3.disabled = false;
-            submitButton4.disabled = false;
-            submitButton5.disabled = false;
 
             const invalidChars = /[^0-9,.]/;
             if (invalidChars.test(value)) {
