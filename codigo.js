@@ -113,29 +113,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const invalidChars = /[^0-9,.]/;
 
-        if (invalidChars.test(value)) {
+        if (value.trim() === "") {
            
-            message.textContent = "Caracteres no permitidos detectados. Solo se permiten números, comas y puntos.";
-
+            message.textContent = "El textarea está vacío. Por favor, ingresa contenido.";
             submitButton1.disabled = true;
             submitButton2.disabled = true;
             submitButton3.disabled = true;
             submitButton4.disabled = true;
             submitButton5.disabled = true;
-
-            var result = document.getElementById("result");
-            result.innerText = "Resultado";
-           
         } else {
-          
+           
             message.textContent = "";
-
             submitButton1.disabled = false;
             submitButton2.disabled = false;
             submitButton3.disabled = false;
             submitButton4.disabled = false;
             submitButton5.disabled = false;
-            
-        }
+
+            const invalidChars = /[^0-9,.]/;
+            if (invalidChars.test(value)) {
+                
+                message.textContent = "Caracteres no permitidos detectados. Solo se permiten números, comas y puntos.";
+                submitButton1.disabled = true;
+                submitButton2.disabled = true;
+                submitButton3.disabled = true;
+                submitButton4.disabled = true;
+                submitButton5.disabled = true;
+            } else {
+                
+                message.textContent = "";
+                submitButton1.disabled = false;
+                submitButton2.disabled = false;
+                submitButton3.disabled = false;
+                submitButton4.disabled = false;
+                submitButton5.disabled = false;
+            }
     });
 });
