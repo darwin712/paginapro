@@ -90,6 +90,9 @@ let myChart = new Chart(ctx, {
 });
 
 
+    return myChart;
+
+
 }
 
 }
@@ -162,6 +165,9 @@ document.addEventListener("DOMContentLoaded", () => {
             var result = document.getElementById("result");
             result.innerText = "Resultado";
 
+            let grafica = calcular(dato);
+            grafica.destroy();
+
            
         } else {
           
@@ -176,6 +182,8 @@ document.addEventListener("DOMContentLoaded", () => {
             var result = document.getElementById("result");
             result.innerText = "Resultado";
 
+            let grafica = calcular(dato);
+            grafica.destroy();
             
         }
 
