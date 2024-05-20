@@ -111,8 +111,9 @@ document.addEventListener("DOMContentLoaded", () => {
             message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
             event.preventDefault(); // Evitar la acción por defecto del botón
             return true; // Indicar que el campo está vacío
+        }else{
+            return false; // Indicar que el campo no está vacío
         }
-        return false; // Indicar que el campo no está vacío
     }
 
     submitButton1.addEventListener("click", (event) => {
