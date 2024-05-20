@@ -106,42 +106,46 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton4 = document.getElementById("Varianza");
     const submitButton5 = document.getElementById("Desviacion");
 
-    function showMessageIfEmpty(event) {
+    function showMessageIfEmpty() {
         if (textarea.value.trim() === "") {
             message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
-            event.preventDefault(); // Evitar la acción por defecto del botón
             return true; // Indicar que el campo está vacío
         }else{
             return false; // Indicar que el campo no está vacío
         }
     }
 
-    submitButton1.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) {
+    submitButton1.addEventListener("click", function(event) {
+        if (showMessageIfEmpty() === "true") {
+            event.preventDefault(); 
             return;
         } 
     });
 
-    submitButton2.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) {
+    submitButton2.addEventListener("click", (event) {
+        if (showMessageIfEmpty() === "true") {
+            event.preventDefault(); 
             return;
         } 
     });
 
-    submitButton3.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) {
+    submitButton3.addEventListener("click", function(event) {
+        if (showMessageIfEmpty() === "true") {
+            event.preventDefault(); 
             return;
         } 
     });
 
-    submitButton4.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) {
+    submitButton4.addEventListener("click", function(event) {
+        if (showMessageIfEmpty() === "true") {
+            event.preventDefault(); 
             return;
         } 
     });
 
-    submitButton5.addEventListener("click", (event) => {
-        if (showMessageIfEmpty(event)) {
+    submitButton5.addEventListener("click", function(event) {
+        if (showMessageIfEmpty() === "true") {
+            event.preventDefault(); 
             return;
         } 
     });
