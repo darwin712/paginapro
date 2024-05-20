@@ -128,8 +128,6 @@ for (var i = 0; i < e - 1; i++) {
             modas.push(Number(numero));
         }
     }
-
-    document.getElementById('result').innerText = 'Moda(s): ' + modas.join(', ');
     
     return modas;
 }
