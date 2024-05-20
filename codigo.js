@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    submitButton1.addEventListener("click", (event) => {
+    submitButton2.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
             message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la mediana.";
             event.preventDefault;
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    submitButton1.addEventListener("click", (event) => {
+    submitButton3.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
             message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la moda.";
             event.preventDefault;
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    submitButton1.addEventListener("click", (event) => {
+    submitButton4.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
             message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la varianza.";
             event.preventDefault;
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    submitButton1.addEventListener("click", (event) => {
+    submitButton5.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
             message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la desviacion estandar.";
             event.preventDefault;
