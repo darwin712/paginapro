@@ -106,7 +106,39 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton4 = document.getElementById("Varianza");
     const submitButton5 = document.getElementById("Desviacion");
 
-    
+    function showMessageIfEmpty(event) {
+        if (textarea.value.trim() === "") {
+            message.textContent = "El campo de texto está vacío. Por favor ingresa valores antes de continuar.";
+            event.preventDefault(); // Evitar la acción por defecto del botón
+            return true; // Indicar que el campo está vacío
+        }
+        return false; // Indicar que el campo no está vacío
+    }
+
+    submitButton1.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; // Mostrar mensaje y salir si el campo está vacío
+        // Lógica para calcular la media
+    });
+
+    submitButton2.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; // Mostrar mensaje y salir si el campo está vacío
+        // Lógica para calcular la mediana
+    });
+
+    submitButton3.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; // Mostrar mensaje y salir si el campo está vacío
+        // Lógica para calcular la moda
+    });
+
+    submitButton4.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; // Mostrar mensaje y salir si el campo está vacío
+        // Lógica para calcular la varianza
+    });
+
+    submitButton5.addEventListener("click", (event) => {
+        if (showMessageIfEmpty(event)) return; // Mostrar mensaje y salir si el campo está vacío
+        // Lógica para calcular la desviación estándar
+    });
 
 
     textarea.addEventListener("input", () => {
