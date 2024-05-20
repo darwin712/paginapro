@@ -3,11 +3,17 @@ function calcular(dato){
 
 var input = document.getElementById('textarea_numeros').value;
 
+if(input === ""){
+    
+}else{
+
 var numerosComoTexto = input.split(",");
 
 var numeros = numerosComoTexto.map(Number);
 
 var e = numeros.length;
+
+const message = document.getElementById("mensaje");
 
 for (var i = 0; i < e - 1; i++) {
     for (var j = 0; j < e - 1 - i; j++) {
@@ -52,6 +58,8 @@ if(dato == "DVE"){
 if(dato == "Moda"){
     var resultModa = document.getElementById("result");
     resultModa.inneErText = "Moda = "+ moda;
+}
+
 }
 
 }
