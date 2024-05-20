@@ -162,7 +162,6 @@ document.addEventListener("DOMContentLoaded", () => {
             var result = document.getElementById("result");
             result.innerText = "Resultado";
 
-            myChart.destroy();
            
         } else {
           
@@ -177,7 +176,6 @@ document.addEventListener("DOMContentLoaded", () => {
             var result = document.getElementById("result");
             result.innerText = "Resultado";
 
-            myChart.destroy();
             
         }
 
