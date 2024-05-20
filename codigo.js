@@ -56,7 +56,7 @@ if(dato == "DVE"){
 
 if(dato == "Moda"){
     var resultModa = document.getElementById("result");
-    resultModa.inneErText = "Moda = "+ moda;
+    resultModa.innerText = "Moda(s) = "+ moda;
 }
 
 }
@@ -98,8 +98,7 @@ for (var i = 0; i < e - 1; i++) {
         }
     }
 
-    document.getElementById('result').innerText = 'Modas: ' + modas.join(', ');
-
+    document.getElementById('result').innerText = 'Moda(s): ' + modas.join(', ');
     
     return modas;
 }
