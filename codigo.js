@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     submitButton1.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
-            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
+            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la mediana.";
             event.preventDefault;
             return;
         }
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     submitButton1.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
-            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
+            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la moda.";
             event.preventDefault;
             return;
         }
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     submitButton1.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
-            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
+            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la varianza.";
             event.preventDefault;
             return;
         }
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     submitButton1.addEventListener("click", (event) => {
         if (textarea.value.trim() === "") {
-            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la media.";
+            message.textContent = "El campo está vacío. Por favor, ingresa algunos números antes de calcular la desviacion estandar.";
             event.preventDefault;
             return;
         }
