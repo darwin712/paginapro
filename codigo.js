@@ -112,8 +112,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton3 = document.getElementById("Moda");
     const submitButton4 = document.getElementById("Varianza");
     const submitButton5 = document.getElementById("Desviacion");
+    const contenedor = document.getElementById('transparentBG');
 
-
+    function ajustarAlturaContenedor() {
+        contenedor.style.height = 'auto'; 
+        contenedor.style.height = `${contenedor.scrollHeight}px`;  
+    }
 
     textarea.addEventListener("input", () => {
 
@@ -149,6 +153,8 @@ document.addEventListener("DOMContentLoaded", () => {
             result.innerText = "Resultado";
             
         }
+
+        ajustarAlturaContenedor();
 
     });
 
@@ -191,8 +197,10 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
     });
+
 });
 
+<<<<<<< HEAD
 function abrirInfo(){
     document.getElementById('transparentBG2').style.display='block';
     document.getElementById('transparentBG').style.display='none';
@@ -204,3 +212,6 @@ function abrirMenu(){
     document.getElementById('transparentBG').style.display='block';
     clickSFX.play();
 }
+=======
+        
+>>>>>>> 8788fb7795bbfb87368ba00ed6b9a3b13895f59b

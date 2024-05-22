@@ -65,7 +65,7 @@ nav{
     border-radius: 15px;
     border: 4px solid rgba(255, 255, 255, 0.668);
     width: 725px;
-    height: 500px;
+    height: auto;
     margin-left: 26%;
     margin-right: 26%;
     box-shadow: rgb(241, 247, 255) 2px 0 20px;
