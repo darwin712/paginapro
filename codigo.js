@@ -200,7 +200,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-<<<<<<< HEAD
 function abrirInfo(){
     document.getElementById('transparentBG2').style.display='block';
     document.getElementById('transparentBG').style.display='none';
@@ -212,6 +211,3 @@ function abrirMenu(){
     document.getElementById('transparentBG').style.display='block';
     clickSFX.play();
 }
-=======
-        
->>>>>>> 8788fb7795bbfb87368ba00ed6b9a3b13895f59b
