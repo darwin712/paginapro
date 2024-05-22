@@ -16,6 +16,7 @@
     <header> <h1> Calculadora de Medidas de Tendencia Central </h1> </header>
 
 <div id="transparentBG">
+  <button id="info" onclick="abrirInfo()"> <img src="infoICON.png" width="30px" height="30px"><span id="hide"> Informacion </span> </button>
   <h1> Ingresar sucesión de numeros </h1>
   <h2 id="result"> Resultado </h2>
   <p id="mensaje">&nbsp;</p>
@@ -35,5 +36,36 @@
     <button onclick="calcular('Varianza')" id="Varianza"> <img src="VarianzaICON.png" width="55px" height="70px"> </button>
     <button onclick="calcular('DVE')" id="Desviacion"> <img src="DesviacionICON.png" width="55px" height="70px"> </button><br><br>
   </div>
+
+  <div id="transparentBG2" class="scrollable">
+    <button id="info" onclick="abrirMenu()"> <img src="returnICON.png" width="30px" height="30px"><span id="hide"> Volver </span> </button>
+    <h1 id="titulos"> Cálculo de Moda: </h1>
+    <h2 id="textos"> La moda es el valor más repetido dentro de un conjunto de números. 
+      La forma más fácil de identificar este valor consiste simplemente en ordenar todos los números y a continuación 
+      contar cuántas veces aparece cada número. </h2>
+    <h1 id="titulos"> Cálculo de la media: </h1>
+    <h2 id="textos"> La media o promedio es el valor central de un conjunto de números. 
+      Este valor se obtiene sumando todos los números del conjunto y dividiendo el resultado por el número total de números. 
+      Este relación puede expresarse mediante la fórmula: </h2>
+    <h1 id="titulos"> Cálculo de la mediana: </h1>
+    <h2 id="textos"> La mediana es el valor situado justo en el centro de un conjunto de números cuando estos han sido ordenados, 
+      ya sea en orden ascendente o descendente. Si el número total de números en el conjunto es impar, entonces la mediana siempre 
+      toma un valor que forma parte del conjunto. Si, en cambio, el número total de números es par, entonces la mediana se calcula 
+      como el promedio entre los dos números centrales. </h2>
+    <h1 id="titulos"> Cálculo de la mediana: </h1>
+    <h2 id="textos"> La mediana es el valor situado justo en el centro de un conjunto de números cuando estos han sido ordenados, 
+        ya sea en orden ascendente o descendente. Si el número total de números en el conjunto es impar, entonces la mediana siempre 
+        toma un valor que forma parte del conjunto. Si, en cambio, el número total de números es par, entonces la mediana se calcula 
+        como el promedio entre los dos números centrales. </h2>
+    <h1 id="titulos"> Cálculo de la varianza: </h1>
+    <h2 id="textos"> La varianza es una medida de dispersión que indica qué tan dispersos están los datos de un conjunto con respecto a 
+      su media. Una varianza alta indica que los datos están muy dispersos, mientras que una varianza baja indica que los datos están más 
+      concentrados alrededor de la media. Para calcular la varianza, primero se calcula la diferencia entre cada dato y la media, luego 
+      se eleva al cuadrado cada una de estas diferencias, y finalmente se promedia esta suma de diferencias al cuadrado.</h2>
+    <h1 id="titulos"> Cálculo de la desviacion estandar: </h1>
+    <h2 id="textos"> La desviación estándar es simplemente la raíz cuadrada de la varianza. Proporciona una medida de dispersión 
+      similar a la varianza, pero en las mismas unidades que los datos originales, lo que la hace más fácil de interpretar. Una 
+      desviación estándar alta indica una mayor dispersión de los datos, mientras que una baja indica una menor dispersión. </h2>
+    </div>
   </body>
 </html>
