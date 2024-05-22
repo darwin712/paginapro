@@ -1,6 +1,9 @@
 
 function calcular(dato){
 
+const clickSFX = new Audio('clickbtnsfx.mp3');
+clickSFX.play();
+
 var input = document.getElementById('textarea_numeros').value;
 
 if(input === ""){
@@ -133,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
            
         } else {
           
-            message.textContent = "&nbsp;";
+            message.textContent = '.';
 
             submitButton1.disabled = false;
             submitButton2.disabled = false;
