@@ -68,13 +68,40 @@ nav{
     height: 500px;
     margin-left: 26%;
     margin-right: 26%;
-    box-shadow: rgb(241, 247, 255) 2px 0 20px;;
+    box-shadow: rgb(241, 247, 255) 2px 0 20px;
+    display: block;
+}
+
+#transparentBG2{
+    text-align: left;
+    background-color:#ced4da61;
+    border-radius: 15px;
+    border: 4px solid rgba(255, 255, 255, 0.668);
+    width: 725px;
+    height: 500px;
+    margin-left: 26%;
+    margin-right: 26%;
+    box-shadow: rgb(241, 247, 255) 2px 0 20px;
+    display: none;
 }
 
 h1{
     color: white;
     font-family: Comic Sans MS;
     text-shadow: rgb(251, 229, 143) 1px 0 10px;
+}
+
+#titulos{
+    font-size: 30px;
+    margin-left: 7%;
+}
+#textos{
+    color: white;
+    font-family: Comic Sans MS;
+    text-shadow: rgb(144, 143, 136) 1px 0 1px;
+    font-size: 19px;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 #result{
@@ -108,6 +135,35 @@ button:hover{
     cursor: pointer;
     transform: translateY(-5px);
 }
+#info{
+    text-align: left;
+    position: absolute;
+    background-color: rgba(158, 196, 228, 0.433);;
+    border-radius: 9px;
+    top: 80px;
+    left: 1099px;
+    width:50px;
+    height:50px;
+}
+#info:hover{
+    transform: translateY(-0.3px);
+    width: 175px;
+}
+
+#info:hover #hide {
+    max-width: 100%;
+    transition: 0.7s;
+  }
+
+#hide {
+    display: inline-block;
+    max-width: 0%;
+    vertical-align: bottom;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-width 0.1s ease-in-out;
+  }
+
 #mensaje{
     color: rgba(255, 255, 255, 0.76);
     font-family: Comic Sans MS;

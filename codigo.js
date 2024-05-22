@@ -1,7 +1,8 @@
 
+const clickSFX = new Audio('clickbtnsfx.mp3');
+
 function calcular(dato){
 
-const clickSFX = new Audio('clickbtnsfx.mp3');
 clickSFX.play();
 
 var input = document.getElementById('textarea_numeros').value;
@@ -191,3 +192,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+function abrirInfo(){
+    document.getElementById('transparentBG2').style.display='block';
+    document.getElementById('transparentBG').style.display='none';
+    clickSFX.play();
+}
+
+function abrirMenu(){
+    document.getElementById('transparentBG2').style.display='none';
+    document.getElementById('transparentBG').style.display='block';
+    clickSFX.play();
+}
