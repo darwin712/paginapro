@@ -111,6 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton3 = document.getElementById("Moda");
     const submitButton4 = document.getElementById("Varianza");
     const submitButton5 = document.getElementById("Desviacion");
+    const contenedor = document.getElementById('transparentBG');
+
 
 
 
@@ -148,6 +150,8 @@ document.addEventListener("DOMContentLoaded", () => {
             result.innerText = "Resultado";
             
         }
+
+        contenedor.style.height = textarea.scrollHeight + 'px';
 
     });
 
@@ -190,4 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
     });
+
 });
+
+        
