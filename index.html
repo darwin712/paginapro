@@ -6,6 +6,7 @@
     </title>
     <link rel="shortcut icon" href="https://images.vexels.me/media/users/3/127358/isolated/preview/736663fe6f9e03fcb39ace9020c42b4c-calculator-stationary-icon.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   </head>
 
@@ -14,7 +15,6 @@
     <script src="codigo.js"></script>
 
     <header> <h1> Calculadora de Medidas de Tendencia Central </h1> </header>
-
 <div id="transparentBG">
   <button id="info" onclick="abrirInfo()"> <img src="infoICON.png" width="30px" height="30px"><span id="hide"> Informacion </span> </button>
   <h1> Ingresar sucesión de numeros </h1>
@@ -47,25 +47,36 @@
     <h2 id="textos"> La media o promedio es el valor central de un conjunto de números. 
       Este valor se obtiene sumando todos los números del conjunto y dividiendo el resultado por el número total de números. 
       Este relación puede expresarse mediante la fórmula: </h2>
+      <h2 id="textos">
+        $$
+        \overline{x} = \frac{\sum n}{n}
+        $$
+      </h2>
     <h1 id="titulos"> Cálculo de la mediana: </h1>
     <h2 id="textos"> La mediana es el valor situado justo en el centro de un conjunto de números cuando estos han sido ordenados, 
       ya sea en orden ascendente o descendente. Si el número total de números en el conjunto es impar, entonces la mediana siempre 
       toma un valor que forma parte del conjunto. Si, en cambio, el número total de números es par, entonces la mediana se calcula 
       como el promedio entre los dos números centrales. </h2>
-    <h1 id="titulos"> Cálculo de la mediana: </h1>
-    <h2 id="textos"> La mediana es el valor situado justo en el centro de un conjunto de números cuando estos han sido ordenados, 
-        ya sea en orden ascendente o descendente. Si el número total de números en el conjunto es impar, entonces la mediana siempre 
-        toma un valor que forma parte del conjunto. Si, en cambio, el número total de números es par, entonces la mediana se calcula 
-        como el promedio entre los dos números centrales. </h2>
     <h1 id="titulos"> Cálculo de la varianza: </h1>
     <h2 id="textos"> La varianza es una medida de dispersión que indica qué tan dispersos están los datos de un conjunto con respecto a 
       su media. Una varianza alta indica que los datos están muy dispersos, mientras que una varianza baja indica que los datos están más 
       concentrados alrededor de la media. Para calcular la varianza, primero se calcula la diferencia entre cada dato y la media, luego 
-      se eleva al cuadrado cada una de estas diferencias, y finalmente se promedia esta suma de diferencias al cuadrado.</h2>
+      se eleva al cuadrado cada una de estas diferencias, y finalmente se promedia esta suma de diferencias al cuadrado. Esta expresion puede
+      expresarse mediante la formula:</h2>
+      <h2 id="textos">
+        $$
+        s^2 = \sum (x-\overline{x})^2
+        $$
+      </h2>
     <h1 id="titulos"> Cálculo de la desviacion estandar: </h1>
     <h2 id="textos"> La desviación estándar es simplemente la raíz cuadrada de la varianza. Proporciona una medida de dispersión 
       similar a la varianza, pero en las mismas unidades que los datos originales, lo que la hace más fácil de interpretar. Una 
-      desviación estándar alta indica una mayor dispersión de los datos, mientras que una baja indica una menor dispersión. </h2>
+      desviación estándar alta indica una mayor dispersión de los datos, mientras que una baja indica una menor dispersión.
+      Esta expresion puede expresarse mediante la formula: </h2>
+      <h2 id="textos">
+        $$
+        \sigma  = \sqrt{\frac{\sum (x-\overline{x})^2}{n}}
+        $$</h2>
     </div>
   </body>
 </html>
