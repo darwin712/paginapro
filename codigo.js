@@ -113,8 +113,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton5 = document.getElementById("Desviacion");
     const contenedor = document.getElementById('transparentBG');
 
-
-
+    function ajustarAlturaContenedor() {
+        contenedor.style.height = 'auto'; 
+        contenedor.style.height = `${contenedor.scrollHeight}px`;  
+    }
 
     textarea.addEventListener("input", () => {
 
@@ -151,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
         }
 
-        contenedor.style.height = textarea.scrollHeight + 'px';
+        ajustarAlturaContenedor();
 
     });
 
