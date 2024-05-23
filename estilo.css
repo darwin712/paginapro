@@ -113,6 +113,7 @@ h1{
     margin-right: 21%;
     margin-left: 21%;
     height: auto;
+    overflow: auto;
 }
 
 
